@@ -51,7 +51,7 @@ void setup () {
    
 }
 
-// Funcao que controla e faz o buzzer apitar quando chamado
+// Função que controla e faz o buzzer fazer um som quando chamado
 void buzzer(){
   
   tone(buzzerPin, 1000); 
@@ -60,7 +60,7 @@ void buzzer(){
   delay(1000);       
 }
 
-// Funcao que exibe alguns textos iniciais na tela e imprime resultados passados por parametro
+// Função que exibe alguns textos iniciais na tela e imprime resultados passados por parametro
 // Utilizando o display de LCD do arduino
 void lcD(String texto){
   lcd.clear();
@@ -93,7 +93,7 @@ void lcD(String texto){
   lcd.print(texto);
 }
 
-// Controla quando um veicula vir na entrada do estacionamento
+// Controla quando um veículo vir na entrada do estacionamento
 void entradas(){
   
   delay(3000);
@@ -108,7 +108,7 @@ void entradas(){
   Serial.println(vagas);  
 }
 
-// Controla quando um veiculo esta no processo de saida do estacionamento
+// Controla quando um veiculo esta no proçesso de saída do estacionamento
 void saidas(){
   
   servo.write(abertura);
